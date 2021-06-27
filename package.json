@@ -1,0 +1,18 @@
+{
+  "name": "coupon-api",
+  "version": "0.0.0",
+  "author": "batzu utkarsh1616@gmail.com",
+  "private": true,
+  "scripts": {
+    "build": "npm install",
+    "start": "node coupon-api.js",
+    "dev": "mongod -f models/mongodb/mongod.conf & nodemon coupon-api.js",
+    "mongokill": "killall mongod"
+  },
+  "dependencies": {
+    "debug": "^2.6.9",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0"
+  }
+}
